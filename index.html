@@ -283,9 +283,14 @@ section{padding:100px 72px;position:relative;z-index:10}
 .c-val{font-size:13px;color:var(--text);font-weight:500}
 
 /* FOOTER */
-footer{border-top:1px solid var(--border);padding:24px 72px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--text-3);position:relative;z-index:10;font-weight:500}
+footer{border-top:1px solid var(--border);padding:28px 72px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--text-3);position:relative;z-index:10;font-weight:500;flex-wrap:wrap;gap:10px}
 footer a{color:var(--accent3);text-decoration:none;transition:color .2s}
 footer a:hover{color:var(--accent)}
+.footer-craft{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-3)}
+.footer-craft .heart{color:var(--rose);animation:hbeat 1.4s ease-in-out infinite;display:inline-block}
+@keyframes hbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+.footer-craft .brand{color:var(--accent3);font-weight:600}
+.footer-craft .name{color:var(--text);font-weight:700;letter-spacing:.04em}
 
 /* REVEAL */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .75s cubic-bezier(.22,.68,0,1.2),transform .75s cubic-bezier(.22,.68,0,1.2)}
@@ -324,7 +329,7 @@ footer a:hover{color:var(--accent)}
   section,#hero{padding:80px 24px 60px}
   .hero-name{white-space:normal}
   .hero-stats{flex-wrap:wrap;gap:20px}
-  footer{flex-direction:column;gap:8px;text-align:center;padding:20px 24px}
+  footer{flex-direction:column;gap:10px;text-align:center;padding:20px 24px}
   .div-line{margin:0 24px}
   .about-side{grid-template-columns:1fr}
 }
@@ -626,6 +631,13 @@ footer a:hover{color:var(--accent)}
 
 <footer>
   <span>© 2026 Deepika Narendran · DevOps Tech Lead · Bengaluru</span>
+  <div class="footer-craft">
+    <span class="heart">♥</span>
+    Crafted with passion —
+    <span class="brand">JoinDeeHub</span>
+    by
+    <span class="name">DEEPIKA NARENDRAN</span>
+  </div>
   <span>Built with HTML / CSS / JS · <a href="https://github.com/JoinDeeHub/deepika-narendran-portfolio" target="_blank">Source on GitHub</a></span>
 </footer>
 
